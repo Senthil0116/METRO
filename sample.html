@@ -1,0 +1,49 @@
+<style>
+  html{
+    background-color: red;
+  }
+  .container{
+   display: grid;
+   width: 420px;
+   height: 200px;
+   grid-template-columns: 250px 400px;
+   grid-template-rows: repeat(3 600px);
+   background-color: black;
+   color: white;
+   border: 2px white solid;
+   border-radius: 10px;
+  }
+  .container img{
+    width: 125px;
+    height: 125px;
+    margin-left:30px;
+    position: relative;
+    bottom: 25px;
+  }
+  .one{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
+  }
+  .two h1{
+    font-size: 60px;
+  }
+  
+  .three h3{
+    font-size: 25px;
+    position: relative;
+    bottom: 70px;
+  }
+  .four p{
+    font-size: 9.5px;
+    position: relative;
+    bottom: 100px;
+  }
+</style>
+
+    <div class="container">
+      <div class="grid-item one" ><img src="icon.png" alt=""></div>
+      <div class="grid-item two" ><h1>Metro</h1></div>
+      <div class="grid-item three" ><h3>Medical Group</h3></div>
+      <div class="grid-item four" ><p>THE CARE THE CONCERN THE CURE</p></div>
+    </div>
